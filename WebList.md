@@ -1,6 +1,10 @@
 # 实用网站
 
 ## 2021年
+- [一个优秀的前端工程师应具备哪些技能？](https://www.zhihu.com/question/26938237/answer/1490785839)
+
+- [程序员必备的书籍有哪些？](https://www.zhihu.com/question/24518877/answer/1466863556)
+
 - [30秒JS](https://github.com/30-seconds/30-seconds-of-code/tree/master/snippets)
 
 - [ICss](https://juejin.cn/post/6918921604160290830)
