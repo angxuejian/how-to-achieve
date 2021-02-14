@@ -1,6 +1,8 @@
 # 实用网站
 
 ## 2021年
+- [从浏览器多进程到JS单线程，JS运行机制最全面的一次梳理](https://www.cnblogs.com/dailc/p/8325991.html)
+
 - [前端面试题](https://blog.csdn.net/raleway/article/details/104268283)
 
 - [一个优秀的前端工程师应具备哪些技能？](https://www.zhihu.com/question/26938237/answer/1490785839)

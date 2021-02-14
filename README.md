@@ -12,9 +12,14 @@
 - 第 1 期：[如何实现 日历(含农历)](docs/HTA-1-201210.md)
 
 ## 实用网站
-- [计算机免费书籍](https://github.com/EbookFoundation/free-programming-books/blob/master/books/free-programming-books-zh.md)
+- [从浏览器多进程到JS单线程，JS运行机制最全面的一次梳理](https://www.cnblogs.com/dailc/p/8325991.html)
+- [一个优秀的前端工程师应具备哪些技能？](https://www.zhihu.com/question/26938237/answer/1490785839)
 - [领域模式 + 脚本模式](https://www.zhihu.com/question/427434420/answer/1554392638)
 - [Colordot-人类的拾色器](https://color.hailpixel.com/)
 - [Markdown-Emoji](https://unicode.org/Public/emoji/13.0/emoji-sequences.txt)
 - [Remove Image Background CN](https://www.remove.bg/zh)
+
+
+<br>
+
 - [查看全部](WebList.md)
