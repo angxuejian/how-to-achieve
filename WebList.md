@@ -1,6 +1,8 @@
 # 实用网站
 
 ## 2021年
+- [JS继承](https://www.cnblogs.com/humin/p/4556820.html)
+
 - [从浏览器多进程到JS单线程，JS运行机制最全面的一次梳理](https://www.cnblogs.com/dailc/p/8325991.html)
 
 - [前端面试题](https://blog.csdn.net/raleway/article/details/104268283)
