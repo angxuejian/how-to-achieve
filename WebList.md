@@ -1,6 +1,8 @@
 # 实用网站
 
 ## 2021年
+- [svg转dataurl](https://codepen.io/jakob-e/pen/doMoML)
+
 - [JS原型、原型链、构造函数、实例与继承](https://www.cnblogs.com/leftJS/p/10943482.html)
 
 - [JS继承](https://www.cnblogs.com/humin/p/4556820.html)
