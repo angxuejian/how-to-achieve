@@ -6,6 +6,7 @@
 联系: [Issues](https://github.com/angxuejian/how-to-achieve/issues)
 
 ## 全部文章
+- 第 5 期：[如何实现 Collapse组件](docs/HTA-5-240323.md)
 
 - 第 4 期：[如何实现 自定义滚动条](docs/HTA-4-211028.md)
 
@@ -39,5 +40,5 @@
 ## 许可
 [MIT License](LICENSE)
 
-how-to-achieve Copyright © 2020-2021 angxuejian
+how-to-achieve Copyright © 2020-2024 angxuejian
 
