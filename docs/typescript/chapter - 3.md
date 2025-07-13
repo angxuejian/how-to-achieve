@@ -1,6 +1,9 @@
-# Partial
+# 联合类型 Union types
 
-Partial 是 TypeScript 提供的一个内置泛型类型，用于创建一个类型的所有属性都变为可选（optional）的新类型。这个类型在处理对象的部分属性时非常有用，尤其是在函数需要处理对象的部分属性时。
+
+联合类型指的是多个类型组成的一个新类型，使用符号``` | ```表示。
+
+联合类型 A | B 表示，任何一个类型只要属于 A 或 B，就属于联合类型 A | B。
 
 ```
 interface User {
@@ -9,15 +12,45 @@ interface User {
     occupation: string;
 }
 
-type PartialUser = Partial<User>;
+interface Admin {
+    name: string;
+    age: number;
+    role: string;
+}
 
-/**
-* PartialUser 的结构会如下:
-*
-* {
-*     name?: string;
-*     age?: age;
-*     occupation?: string;
-* }
-*/
+// 联合类型
+export type Person = User | Admin;
+
+export const persons: Person[] = [
+    {
+        name: 'Max Mustermann',
+        age: 25,
+        occupation: 'Chimney sweep'
+    },
+    {
+        name: 'Jane Doe',
+        age: 32,
+        role: 'Administrator'
+    },
+    {
+        name: 'Kate Müller',
+        age: 23,
+        occupation: 'Astronaut'
+    },
+    {
+        name: 'Bruce Willis',
+        age: 64,
+        role: 'World saver'
+    }
+];
+
+export function logPerson(user: Person) {
+    console.log(` - ${user.name}, ${user.age}`);
+}
+
+persons.forEach(logPerson);
+
 ```
+
+TS官方文档：[Union Types](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#union-types)
+
