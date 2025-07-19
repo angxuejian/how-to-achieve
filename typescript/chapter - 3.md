@@ -5,7 +5,7 @@
 
 联合类型 A | B 表示，任何一个类型只要属于 A 或 B，就属于联合类型 A | B。
 
-```
+```ts
 interface User {
     name: string;
     age: number;
