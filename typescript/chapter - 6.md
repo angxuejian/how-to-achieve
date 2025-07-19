@@ -52,6 +52,7 @@ type PartialUser = Partial<User>;
 
 ## Exclude<UnionType, ExcludedMembers>
 > type Exclude<T, U> = T extends U ? never : T
+
 通过从所有可分配的Type中，排除非赋值类型，来构造一个类型
 
 ```ts
