@@ -50,6 +50,64 @@ type PartialUser = Partial<User>;
 // }
 ```
 
+## Required<Type>
+> type Required<T> = { [P in keyof T]-?: T[P]; }
+
+与`Partial<Type>`相反，构造一个类型，该类型都为必填项
+
+```ts
+interface User {
+    name?: string;
+    age?: number;
+    occupation?: string;
+}
+
+type RequiredUser = Required<User>
+// type RequiredUser = {
+//   name: string;
+//   age: age;
+//   occupation: string;
+// }
+```
+
+## Readonly<Type>
+> type Readonly<T> = { readonly [P in keyof T]: T[P]; }
+
+构造一个类型，该类型的属性只为只读
+
+```ts
+interface User {
+    name: string;
+    age: number;
+    occupation: string;
+}
+type ReadonlyUser = Readonly<User>
+// type ReadonlyUser = {
+//    readonly name: string;
+//    readonly age: number;
+//    readonly occupation: string;
+// }
+```
+
+## Record<Keys, Type>
+> type Record<K extends keyof any, T> = { [P in K]: T; }
+
+构造一个对象类型，"key：是keys类型"，"value: 是Type类型"
+
+```ts
+type ItemKey = 'language' | 'darkMode'
+type ItemValue = string | boolean
+
+const settings: Record<ItemKey, ItemValue> = {
+    language: '简体中文',
+    darkMode: false
+}
+
+settings.language;
+// const settings: Record<ItemKey, ItemValue>
+```
+
+
 ## Exclude<UnionType, ExcludedMembers>
 > type Exclude<T, U> = T extends U ? never : T
 
