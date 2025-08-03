@@ -107,6 +107,44 @@ settings.language;
 // const settings: Record<ItemKey, ItemValue>
 ```
 
+## Pick<Type, Keys>
+> type Pick<T, K extends keyof T> = { [P in K]: T[P]; }
+
+从已有对象类型中选取类型，基于已选择的类型构造一个新的对象类型
+
+```ts
+interface User {
+    name: string,
+    age: number,
+    language: string
+}
+
+type UserPick = Pick<User, 'name' | 'age'>
+// type UserPick = {
+//     name: string;
+//     age: number;
+// }
+```
+
+
+## Omit<Type, Keys>
+> type Omit<T, K extends keyof any> = { [P in Exclude<keyof T, K>]: T[P]; }
+
+从已有对象类型中忽略类型，基于未忽略的类型构造一个新的对象类型
+
+```ts
+interface User {
+    name: string,
+    age: number,
+    language: string
+}
+
+type UserOmit = Omit<User, 'name' | 'age'>
+// type UserOmit = {
+//     language: string;
+// }
+```
+
 
 ## Exclude<UnionType, ExcludedMembers>
 > type Exclude<T, U> = T extends U ? never : T
@@ -149,4 +187,16 @@ type t3 = Extract<user1 | user2, { sex: 'male'}>
 //   name: 'yiye'
 //   sex: 'male'
 // }
+```
+
+## Uppercase<StringType>
+> type Uppercase<S extends string> = intrinsic
+
+将字符串中的每个字符转换为大写版本。
+
+```ts
+
+type upperKey = Uppercase<'hello world'>
+// type upperKey = "HELLO WORLD"
+
 ```
