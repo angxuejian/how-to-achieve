@@ -24,11 +24,11 @@
 
 ## Other blog
 
-- 第 -1 期：[Vite / Vue3](/vite/README.md)
+- 第 1 期：[Vite / Vue3](/vite/README.md)
 
-- 第 -2 期：[Typescript](/typescript/README.md)
+- 第 2 期：[Typescript](/typescript/README.md)
 
-- 第 -3 期：[Git](/git/README.md)
+- 第 3 期：[Git](/git/README.md)
 
 
 
